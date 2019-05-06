@@ -76,9 +76,7 @@ Report bugs to <michael.hanke@gmail.com>.
 - add it to your `PATH` either temporary (using `export`)
 `export PATH="$PATH:path/where/mridefacer/is/stored/"` </br>
 - or permanently, setting it in your `profile` using your favorite editor:
-`nano/vim/gedit/etc ~/.bashrc`or `nano/vim/gedit/etc ~/.bash_profile` </br>
-</br>
-to include the following:</br>
+`nano/vim/gedit/etc ~/.bashrc`or `nano/vim/gedit/etc ~/.bash_profile` to include the following:</br>
 `PATH=$PATH:path/were/mridefacer/is/stored` </br>
 - do the same `MRIDEFACER_DATA_DIR`
 
