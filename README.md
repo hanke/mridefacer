@@ -68,3 +68,28 @@ Report bugs to <michael.hanke@gmail.com>.
 
 ````
 
+### Installation
+
+- go to the directory where you want to save `mridefacer` and get it using:</br>
+`cd path/where/mridefacer/should/be/stored` </br>
+`git clone https://github.com/mih/mridefacer`
+- add it to your `PATH` either temporary (using `export`)
+`export PATH="$PATH:path/where/mridefacer/is/stored/"` </br>
+- or permanently, setting it in your `profile` using your favorite editor:
+`nano/vim/gedit/etc ~/.bashrc`or `nano/vim/gedit/etc ~/.bash_profile` to include the following:</br>
+`PATH=$PATH:path/were/mridefacer/is/stored` </br>
+- do the same `MRIDEFACER_DATA_DIR`
+
+- check if your FSLDIR environment variable is set by typing `$FSLDIR` in your terminal and in case it is not set, do so by repeating the steps you did for `mridefacer`, adapting them to `FSLDIR` (that is, where `FSL` is stored on your machine):</br>
+`export FSLDIR="path/where/FSL/is/stored"` </br>
+or include it in your `profile`:</br>
+`FSLDIR="path/where/FSL/is/stored"`
+
+- after completing the above steps, `mridefacer` should work out-of-the-box in most cases
+
+- in case you're receiving an error related to `numbound`, please install the `num-utils` package:</br>
+`apt-get install num-utils`
+
+
+
+Please note: mridefacer runs natively on [linux systems](https://en.wikipedia.org/wiki/Linux) such as [neurodebian](http://neuro.debian.net/) and [ubuntu](https://www.ubuntu.com/), but won't work on [macOS](https://en.wikipedia.org/wiki/MacOS) or [windows](https://en.wikipedia.org/wiki/Microsoft_Windows).
